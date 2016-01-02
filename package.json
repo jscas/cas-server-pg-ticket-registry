@@ -1,0 +1,26 @@
+{
+  "name": "cas-server-pg-ticket-registry",
+  "version": "0.1.0",
+  "description": "Reference implementation of a ticket registry that is backed by a PostgreSQL DB",
+  "main": "registry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/jscas/cas-server-pg-ticket-registry",
+  "bugs": "https://github.com/jscas/cas-server-pg-ticket-registry/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jscas/cas-server-pg-ticket-registry.git"
+  },
+  "keywords": [
+    "cas-server",
+    "cas",
+    "apereo",
+    "jasig"
+  ],
+  "author": "James Sumners",
+  "license": "MIT",
+  "dependencies": {
+    "cas-server-registries-db": "jscas/cas-server-registries-db"
+  }
+}
