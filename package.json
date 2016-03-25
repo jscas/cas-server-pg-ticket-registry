@@ -1,6 +1,6 @@
 {
   "name": "cas-server-pg-ticket-registry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reference implementation of a ticket registry that is backed by a PostgreSQL DB",
   "main": "registry.js",
   "scripts": {
@@ -21,6 +21,6 @@
   "author": "James Sumners",
   "license": "MIT",
   "dependencies": {
-    "cas-server-registries-db": "jscas/cas-server-registries-db"
+    "cas-server-registries-db": "^0.1.0"
   }
 }
