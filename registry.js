@@ -13,7 +13,7 @@ module.exports.plugin = function(conf, context) {
     db = registriesDB(context.dataSources.knex);
   }
   if (!registry) {
-    registry = new Registry(db, conf, context.logger);
+    registry = new Registry(db, context.ticketLifetimes, context.logger);
   }
 
   return registry;
