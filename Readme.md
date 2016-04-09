@@ -3,22 +3,11 @@
 This module provides a reference implementation of a ticket registry plugin
 for [cas-server][cs].
 
-Intializing the plugin requires a [knex][knex] compatible
-[configuration object][kfile] specifying the database connection details:
-
-```javscript
-{
-  client: 'postgresql',
-  connection: {
-    database: 'casserver',
-    user: 'casserver'
-  }
-}
-```
+Intializing the plugin requires a [knex][knex] data source passed in via the
+phase one context.
 
 [cs]: https://github.com/jscas/cas-server
 [knex]: http://knexjs.org/
-[kfile]: http://knexjs.org/#knexfile
 
 ## License
 

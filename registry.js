@@ -10,10 +10,10 @@ let registry;
 module.exports.name = 'pgTicketRegistry';
 module.exports.plugin = function(conf, context) {
   if (!db) {
-    db = registriesDB(conf.db);
+    db = registriesDB(context.dataSources.knex);
   }
   if (!registry) {
-    registry = new Registry(db, conf, context.logger);
+    registry = new Registry(db, context.ticketLifetimes, context.logger);
   }
 
   return registry;
