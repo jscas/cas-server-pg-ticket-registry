@@ -21,6 +21,7 @@
   "author": "James Sumners",
   "license": "MIT",
   "dependencies": {
-    "cas-server-registries-db": "jscas/cas-server-registries-db"
+    "cas-server-registries-db": "jscas/cas-server-registries-db",
+    "then-yield": "0.0.1"
   }
 }
